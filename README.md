@@ -1,5 +1,6 @@
 # Fever for files
 This is a redesigned code from the WhatTheWikiFact application (https://arxiv.org/pdf/2105.00826.pdf) - a system for automatic claim verification using Wikipedia. The system can predict the veracity of an input claim, and it further shows the evidence it has retrieved as part of the verification process. It shows confidence scores and a list of relevant Wikipedia articles, together with detailed information about each article, including the phrase used to retrieve it, the most relevant sentences extracted from it and their stance with respect to the input claim, as well as the associated probabilities. 
+
 The overall architecture was preserved.  First, the Document Retrieval (DR) module finds potentially relevant documents from Wikipedia. Then, the Sentence Retrieval (SR) module extracts the top-20 most relevant sentences from these documents. Afterwards, the Natural Language Inference (NLI) module classifies each claim–sentence pair as support/refute/NEI. Finally, the aggregation module makes a final prediction.
 
 ## Quick start  
