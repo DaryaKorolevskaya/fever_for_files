@@ -1,0 +1,7 @@
+{
+    "data_input_path": "example_data/input_data/sample.json",
+    "data_output_path": "example_data/output_data",
+    "path_to_model_dir": "artifacts/bert_repo",
+    "action": "inference",
+    "model_parameters": {}
+}
