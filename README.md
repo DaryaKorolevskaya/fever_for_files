@@ -26,7 +26,7 @@ Your output will be stored in the example_data/output_data folder. It will consi
 ```
    [
    {"sentence": "Пушкин родился в...", "data" : "Verdict, Confidence, etc"},
-   {"sentence": "Пушкин - певец", "data": "something"}
+   {"sentence": "Пушкин - певец", "data": "Verdict, Confidence, etc"}
    ]
 ```
 Other output files will be Altair charts of the predicted stance labels for the input claim with respect to each retrieved sentence. The stance is expressed as one of the classes Supports (SUP), Refutes (REF), or Not Enough Info (NEI). The chart further shows the class probability, which is also represented as the bar height, sentence number, and label, which is also indicated with the corresponding color. Note that there are three bars for each sentence, i.e., one for each label. Moreover, the bars are ordered (grouped) by sentences.
