@@ -12,14 +12,23 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
 ### Set up requirements 
     pip install -r reqs3.txt
 
-Create an input json file containing a language and up to 5 claims for verification, then, set up a parameters file with paths to the input data and output data. 
+### Create an input json file containing a language and up to 5 claims for verification. 
+```
+{
+  "language": "en",
+  "sentences": "Alexander Pushkin was born in Russia.\nAlexander Pushkin is a Russian singer."
+}
+```
 
+Next, check if parameters file contains the right paths to the input data and output data. 
 ### Finally, run exec_script.py
     python exec_script.py -p /full/path/to/params.json
 
 Your output will be stored in the example_data/output_data folder. It will consist of several json files. The first will contain information about every claim you entered in the format:
-### 
-   [{"sentence": "Пушкин родился в...", "data" : "Verdict, Confidence, etc"},
-   {"sentence": "Пушкин - певец", "data": "something"}]
-###
+```
+   [
+   {"sentence": "Пушкин родился в...", "data" : "Verdict, Confidence, etc"},
+   {"sentence": "Пушкин - певец", "data": "something"}
+   ]
+```
 Other output files will be Altair charts of the predicted stance labels for the input claim with respect to each retrieved sentence. The stance is expressed as one of the classes Supports (SUP), Refutes (REF), or Not Enough Info (NEI). The chart further shows the class probability, which is also represented as the bar height, sentence number, and label, which is also indicated with the corresponding color. Note that there are three bars for each sentence, i.e., one for each label. Moreover, the bars are ordered (grouped) by sentences.
