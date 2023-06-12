@@ -18,7 +18,8 @@ Create an input json file containing a language and up to 5 claims for verificat
     python exec_script.py -p /full/path/to/params.json
 
 Your output will be stored in the example_data/output_data folder. It will consist of several json files. The first will contain information about every claim you entered in the format:
-    [
+###
+   [
 {"sentence": "Пушкин родился в...", "data" : "Verdict, Confidence, etc"},
     {"sentence": "Пушкин - певец", "data": "something"}
     ]
