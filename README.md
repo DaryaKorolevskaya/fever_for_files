@@ -11,7 +11,6 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
     cd path/to/directory
 ### Set up requirements 
     pip install -r reqs3.txt
-
 ### Create an input json file containing a language and up to 5 claims for verification. 
 ```
 {
@@ -19,7 +18,6 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
   "sentences": "Alexander Pushkin was born in Russia.\nAlexander Pushkin is a Russian singer."
 }
 ```
-
 Next, check if parameters file contains the right paths to the input data and output data. 
 ### Finally, run exec_script.py
     python exec_script.py -p /full/path/to/params.json
