@@ -4,6 +4,11 @@ This is a redesigned code from the WhatTheWikiFact application (https://arxiv.or
 The overall architecture was preserved.  First, the Document Retrieval (DR) module finds potentially relevant documents from Wikipedia. Then, the Sentence Retrieval (SR) module extracts the top-20 most relevant sentences from these documents. Afterwards, the Natural Language Inference (NLI) module classifies each claim–sentence pair as support/refute/NEI. Finally, the aggregation module makes a final prediction.
 
 ## Quick start  
+
+### Download checkps.zip
+   https://drive.google.com/file/d/17yCXKhm6_m05r9eUG-0qNq14Mmy74Mf7/view?usp=sharing
+
+Download weights for models from the link and move the folder to /path/to/fever_for_files/artifacts
     
 ### Create virtual enviroment on python 3.7 and move to project directory
     virtualenv myvenv -p /path/to/python3.7
