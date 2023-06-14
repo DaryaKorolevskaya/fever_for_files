@@ -8,6 +8,7 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
 ### Check ups
 
 Move weights for the Bert and Catboost to the folder to /path/to/fever_for_files/artifacts
+
 If you need the initial weight for the project - contact the author.
     
 ### Create virtual enviroment on python 3.7 and move to project directory
