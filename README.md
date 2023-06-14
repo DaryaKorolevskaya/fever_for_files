@@ -5,7 +5,7 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
 
 ## Quick start  
 
-### Check ups
+### Checkups
 
 Move weights for the Bert and Catboost to the folder to /path/to/fever_for_files/artifacts
 
