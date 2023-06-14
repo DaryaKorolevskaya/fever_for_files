@@ -5,10 +5,10 @@ The overall architecture was preserved.  First, the Document Retrieval (DR) modu
 
 ## Quick start  
 
-### Download checkps.zip
-   https://drive.google.com/file/d/17yCXKhm6_m05r9eUG-0qNq14Mmy74Mf7/view?usp=sharing
+### Check ups
 
-Download weights for models from the link and move the folder to /path/to/fever_for_files/artifacts
+Move weights for the Bert and Catboost to the folder to /path/to/fever_for_files/artifacts
+If you need the initial weight for the project - contact the author.
     
 ### Create virtual enviroment on python 3.7 and move to project directory
     virtualenv myvenv -p /path/to/python3.7
